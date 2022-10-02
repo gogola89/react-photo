@@ -1,0 +1,37 @@
+.images {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 8px;
+  row-gap: 12px;
+  margin: 20px 0;
+}
+
+.image-item {
+  margin: 0;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 216px;
+  height: 138px;
+  transition: all 0.4s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.search-text {
+  height: 65vh;
+  grid-column: 1/-1;
+  color: #777;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.action-display {
+  grid-column: 1/-1;
+}
